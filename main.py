@@ -2,7 +2,9 @@ import cv2
 import numpy as np
 from keras.models import load_model
 
-video = cv2.VideoCapture(0)
+ip = 0
+# ip = ""
+video = cv2.VideoCapture(ip)
 
 model = load_model('modelo/keras_model.h5', compile=False)
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
