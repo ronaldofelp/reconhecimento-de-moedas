@@ -1,0 +1,4 @@
+0 1 real
+1 50 centavos
+2 1o centavos
+3 25 centavos
