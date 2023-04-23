@@ -6,7 +6,6 @@ ip = 0
 # ip = ""
 video = cv2.VideoCapture(ip)
 
-
 model = load_model('modelo/keras_model.h5', compile=False)
 <<<<<<< HEAD
     
