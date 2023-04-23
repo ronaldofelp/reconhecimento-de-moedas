@@ -5,11 +5,14 @@ from keras.models import load_model
 
 video = cv2.VideoCapture()
 
+
 model = load_model('modelo/keras_model.h5', compile=False)
+    
+
 data = np.ndarray(shape=(1,224,224,3),dtype=np.float32)
 classes = ["1 real","50 centavos","10 centavos","25 centavos"]
 
-ip = ""
+ip = "https://192.168.0.112:8080/video"
 
 video.open(ip)
 
